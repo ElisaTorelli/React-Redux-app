@@ -1,0 +1,15 @@
+// in this file I combine all the reducers & export 1 reducer that can be passed to the createStore function
+import {combineReducers} from 'redux'
+import cakeReducer from './cake/cakeReducer'
+import iceCreamReducer from './iceCream/iceCreamReducer'
+import muffinReducer from './muffin/muffinReducer'
+
+
+// define root reducer
+const rootReducer = combineReducers({
+    cake: cakeReducer,
+    iceCream: iceCreamReducer,
+    muffin: muffinReducer
+})
+
+export default rootReducer
