@@ -3,13 +3,14 @@ import {combineReducers} from 'redux'
 import cakeReducer from './cake/cakeReducer'
 import iceCreamReducer from './iceCream/iceCreamReducer'
 import muffinReducer from './muffin/muffinReducer'
-
+import useReducer from './user/userReducer'
 
 // define root reducer
 const rootReducer = combineReducers({
     cake: cakeReducer,
     iceCream: iceCreamReducer,
-    muffin: muffinReducer
+    muffin: muffinReducer,
+    user: useReducer
 })
 
 export default rootReducer
